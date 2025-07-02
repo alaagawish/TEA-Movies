@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36BFEDE22E1587430021C524 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEDE12E1587430021C524 /* Alamofire */; };
+		36BFEDE52E1587560021C524 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEDE42E1587560021C524 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		36BFEDC32E157ABF0021C524 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BFEDE52E1587560021C524 /* Kingfisher in Frameworks */,
+				36BFEDE22E1587430021C524 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = "TEA-Movies";
 			packageProductDependencies = (
+				36BFEDE12E1587430021C524 /* Alamofire */,
+				36BFEDE42E1587560021C524 /* Kingfisher */,
 			);
 			productName = "TEA-Movies";
 			productReference = 36BFEDA92E157ABD0021C524 /* TEA-Movies.app */;
@@ -208,6 +217,10 @@
 			);
 			mainGroup = 36BFEDA02E157ABD0021C524;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				36BFEDE02E1587430021C524 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				36BFEDE32E1587560021C524 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 36BFEDAA2E157ABD0021C524 /* Products */;
 			projectDirPath = "";
@@ -292,6 +305,7 @@
 				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TEA-Movies/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +334,7 @@
 				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TEA-Movies/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -571,6 +586,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36BFEDE02E1587430021C524 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		36BFEDE32E1587560021C524 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36BFEDE12E1587430021C524 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36BFEDE02E1587430021C524 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		36BFEDE42E1587560021C524 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36BFEDE32E1587560021C524 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36BFEDA12E157ABD0021C524 /* Project object */;
 }
