@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		36BFEDC32E157ABF0021C524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFEDA12E157ABD0021C524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36BFEDA82E157ABD0021C524;
+			remoteInfo = "TEA-Movies";
+		};
+		36BFEDCD2E157ABF0021C524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFEDA12E157ABD0021C524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36BFEDA82E157ABD0021C524;
+			remoteInfo = "TEA-Movies";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36BFEDA92E157ABD0021C524 /* TEA-Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TEA-Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BFEDC22E157ABF0021C524 /* TEA-MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TEA-MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BFEDCC2E157ABF0021C524 /* TEA-MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TEA-MoviesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		36BFEDD42E157ABF0021C524 /* Exceptions for "TEA-Movies" folder in "TEA-Movies" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 36BFEDA82E157ABD0021C524 /* TEA-Movies */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		36BFEDAB2E157ABD0021C524 /* TEA-Movies */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				36BFEDD42E157ABF0021C524 /* Exceptions for "TEA-Movies" folder in "TEA-Movies" target */,
+			);
+			path = "TEA-Movies";
+			sourceTree = "<group>";
+		};
+		36BFEDC52E157ABF0021C524 /* TEA-MoviesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TEA-MoviesTests";
+			sourceTree = "<group>";
+		};
+		36BFEDCF2E157ABF0021C524 /* TEA-MoviesUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TEA-MoviesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36BFEDA62E157ABD0021C524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDBF2E157ABF0021C524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDC92E157ABF0021C524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36BFEDA02E157ABD0021C524 = {
+			isa = PBXGroup;
+			children = (
+				36BFEDAB2E157ABD0021C524 /* TEA-Movies */,
+				36BFEDC52E157ABF0021C524 /* TEA-MoviesTests */,
+				36BFEDCF2E157ABF0021C524 /* TEA-MoviesUITests */,
+				36BFEDAA2E157ABD0021C524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36BFEDAA2E157ABD0021C524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36BFEDA92E157ABD0021C524 /* TEA-Movies.app */,
+				36BFEDC22E157ABF0021C524 /* TEA-MoviesTests.xctest */,
+				36BFEDCC2E157ABF0021C524 /* TEA-MoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36BFEDA82E157ABD0021C524 /* TEA-Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36BFEDD52E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-Movies" */;
+			buildPhases = (
+				36BFEDA52E157ABD0021C524 /* Sources */,
+				36BFEDA62E157ABD0021C524 /* Frameworks */,
+				36BFEDA72E157ABD0021C524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				36BFEDAB2E157ABD0021C524 /* TEA-Movies */,
+			);
+			name = "TEA-Movies";
+			packageProductDependencies = (
+			);
+			productName = "TEA-Movies";
+			productReference = 36BFEDA92E157ABD0021C524 /* TEA-Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36BFEDC12E157ABF0021C524 /* TEA-MoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36BFEDDA2E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-MoviesTests" */;
+			buildPhases = (
+				36BFEDBE2E157ABF0021C524 /* Sources */,
+				36BFEDBF2E157ABF0021C524 /* Frameworks */,
+				36BFEDC02E157ABF0021C524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36BFEDC42E157ABF0021C524 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				36BFEDC52E157ABF0021C524 /* TEA-MoviesTests */,
+			);
+			name = "TEA-MoviesTests";
+			packageProductDependencies = (
+			);
+			productName = "TEA-MoviesTests";
+			productReference = 36BFEDC22E157ABF0021C524 /* TEA-MoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36BFEDCB2E157ABF0021C524 /* TEA-MoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36BFEDDD2E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-MoviesUITests" */;
+			buildPhases = (
+				36BFEDC82E157ABF0021C524 /* Sources */,
+				36BFEDC92E157ABF0021C524 /* Frameworks */,
+				36BFEDCA2E157ABF0021C524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36BFEDCE2E157ABF0021C524 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				36BFEDCF2E157ABF0021C524 /* TEA-MoviesUITests */,
+			);
+			name = "TEA-MoviesUITests";
+			packageProductDependencies = (
+			);
+			productName = "TEA-MoviesUITests";
+			productReference = 36BFEDCC2E157ABF0021C524 /* TEA-MoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36BFEDA12E157ABD0021C524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					36BFEDA82E157ABD0021C524 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					36BFEDC12E157ABF0021C524 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 36BFEDA82E157ABD0021C524;
+					};
+					36BFEDCB2E157ABF0021C524 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 36BFEDA82E157ABD0021C524;
+					};
+				};
+			};
+			buildConfigurationList = 36BFEDA42E157ABD0021C524 /* Build configuration list for PBXProject "TEA-Movies" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36BFEDA02E157ABD0021C524;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 36BFEDAA2E157ABD0021C524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36BFEDA82E157ABD0021C524 /* TEA-Movies */,
+				36BFEDC12E157ABF0021C524 /* TEA-MoviesTests */,
+				36BFEDCB2E157ABF0021C524 /* TEA-MoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36BFEDA72E157ABD0021C524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDC02E157ABF0021C524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDCA2E157ABF0021C524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36BFEDA52E157ABD0021C524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDBE2E157ABF0021C524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BFEDC82E157ABF0021C524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36BFEDC42E157ABF0021C524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36BFEDA82E157ABD0021C524 /* TEA-Movies */;
+			targetProxy = 36BFEDC32E157ABF0021C524 /* PBXContainerItemProxy */;
+		};
+		36BFEDCE2E157ABF0021C524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36BFEDA82E157ABD0021C524 /* TEA-Movies */;
+			targetProxy = 36BFEDCD2E157ABF0021C524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36BFEDD62E157ABF0021C524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TEA-Movies/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36BFEDD72E157ABF0021C524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TEA-Movies/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36BFEDD82E157ABF0021C524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36BFEDD92E157ABF0021C524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36BFEDDB2E157ABF0021C524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEA-Movies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TEA-Movies";
+			};
+			name = Debug;
+		};
+		36BFEDDC2E157ABF0021C524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEA-Movies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TEA-Movies";
+			};
+			name = Release;
+		};
+		36BFEDDE2E157ABF0021C524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TEA-Movies";
+			};
+			name = Debug;
+		};
+		36BFEDDF2E157ABF0021C524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KQ3VPM6R9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TEA-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TEA-Movies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36BFEDA42E157ABD0021C524 /* Build configuration list for PBXProject "TEA-Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BFEDD82E157ABF0021C524 /* Debug */,
+				36BFEDD92E157ABF0021C524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36BFEDD52E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BFEDD62E157ABF0021C524 /* Debug */,
+				36BFEDD72E157ABF0021C524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36BFEDDA2E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-MoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BFEDDB2E157ABF0021C524 /* Debug */,
+				36BFEDDC2E157ABF0021C524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36BFEDDD2E157ABF0021C524 /* Build configuration list for PBXNativeTarget "TEA-MoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BFEDDE2E157ABF0021C524 /* Debug */,
+				36BFEDDF2E157ABF0021C524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36BFEDA12E157ABD0021C524 /* Project object */;
+}
