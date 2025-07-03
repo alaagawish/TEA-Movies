@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		36BFEDE22E1587430021C524 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEDE12E1587430021C524 /* Alamofire */; };
 		36BFEDE52E1587560021C524 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEDE42E1587560021C524 /* Kingfisher */; };
+		36BFEE252E1614B30021C524 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEE242E1614B30021C524 /* Reachability */; };
+		36BFEE282E1615280021C524 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 36BFEE272E1615280021C524 /* Cosmos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BFEDE52E1587560021C524 /* Kingfisher in Frameworks */,
+				36BFEE252E1614B30021C524 /* Reachability in Frameworks */,
+				36BFEE282E1615280021C524 /* Cosmos in Frameworks */,
 				36BFEDE22E1587430021C524 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +138,8 @@
 			packageProductDependencies = (
 				36BFEDE12E1587430021C524 /* Alamofire */,
 				36BFEDE42E1587560021C524 /* Kingfisher */,
+				36BFEE242E1614B30021C524 /* Reachability */,
+				36BFEE272E1615280021C524 /* Cosmos */,
 			);
 			productName = "TEA-Movies";
 			productReference = 36BFEDA92E157ABD0021C524 /* TEA-Movies.app */;
@@ -220,6 +226,8 @@
 			packageReferences = (
 				36BFEDE02E1587430021C524 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				36BFEDE32E1587560021C524 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				36BFEE232E1614B30021C524 /* XCRemoteSwiftPackageReference "Reachability" */,
+				36BFEE262E1615280021C524 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 36BFEDAA2E157ABD0021C524 /* Products */;
@@ -311,6 +319,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +349,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +614,22 @@
 				minimumVersion = 8.3.3;
 			};
 		};
+		36BFEE232E1614B30021C524 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tonymillion/Reachability";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.5;
+			};
+		};
+		36BFEE262E1615280021C524 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -616,6 +642,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 36BFEDE32E1587560021C524 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		36BFEE242E1614B30021C524 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36BFEE232E1614B30021C524 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		36BFEE272E1615280021C524 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36BFEE262E1615280021C524 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

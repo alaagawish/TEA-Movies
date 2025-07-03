@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol NetworkProtocol {
+    func getMoviesList(sortedBy: SortTypes, releaseYear: Int, token: String, completion: @escaping (MoviesResponse?) -> Void)
+}
