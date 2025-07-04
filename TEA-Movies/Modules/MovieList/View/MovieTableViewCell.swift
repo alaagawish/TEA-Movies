@@ -26,7 +26,7 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     func addNewMovie(_ movie: MoviesResponseResults) {
-        movieImage.kf.setImage(with: URL(string: movie.posterPath ?? ""), placeholder: UIImage(named: "notfound"))
+        movieImage.kf.setImage(with: URL(string: "\(Constants.IMAGE_BASE_URL)\(movie.posterPath ?? "")"), placeholder: UIImage(named: "notfound"))
         ratingView.rating = Double(movie.voteAverage ?? 0) / 2.0
         ratingView.isUserInteractionEnabled = false
         movieName.text = movie.title

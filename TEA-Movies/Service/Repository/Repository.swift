@@ -8,7 +8,7 @@
 import Foundation
 
 class Repository: NetworkProtocol, LocalProtocol {
-   
+    
     var network: NetworkProtocol!
     var localDataStore: LocalProtocol!
     init(network: NetworkProtocol!, localDataStore: LocalProtocol!) {
@@ -23,7 +23,6 @@ class Repository: NetworkProtocol, LocalProtocol {
         Connectivity.shared.startMonitoring()
     }
     func isConnectedToInternet() -> Bool {
-        print("internet check \(Connectivity.shared.isConnected)")
         return Connectivity.shared.isConnected
     }
     
