@@ -19,6 +19,7 @@ class MoviesViewController: UIViewController {
         registerCell()
         bindValues()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if moviesViewModel.checkInternetConnection() {
@@ -27,17 +28,31 @@ class MoviesViewController: UIViewController {
             moviesViewModel.getLocalMovies()
         }
     }
+    
     private func bindValues() {
         moviesViewModel.bindMovies = { [weak self] in
             self?.movies = self?.moviesViewModel.moviesResponse?.results ?? []
+            self?.checkFave()
             self?.moviesTableView.reloadData()
+            if ((self?.moviesViewModel.checkInternetConnection()) ?? false) {
+                self?.moviesViewModel.clearLocalDB()
+            }
         }
     }
+    
+    private func checkFave() {
+       let faveMovies = moviesViewModel.getFavedMovies()
+        let faveIDs = Set(faveMovies.map { $0.id })
+
+        for i in 0..<movies.count {
+            movies[i].isFave = faveIDs.contains(movies[i].id)
+        }
+
+    }
+    
     private func registerCell() {
         moviesTableView.register(UINib(nibName: MovieTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: MovieTableViewCell.identifier)
     }
-    
-    
     
 }
 extension MoviesViewController: UITableViewDataSource, UITableViewDelegate {
@@ -47,8 +62,7 @@ extension MoviesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier, for: indexPath) as? MovieTableViewCell
-        // TODO: - CHECK IS FAVE?
-        cell?.addNewMovie(movies[indexPath.row], isFave: false)
+        cell?.addNewMovie(movies[indexPath.row])
         cell?.indexPath = indexPath
         cell?.dealingWithMovieDelegate = self
         return cell ?? UITableViewCell()
@@ -59,10 +73,7 @@ extension MoviesViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension MoviesViewController: DealingWithMovieDelegate {
     func toggleMovieToFavourite(at indexPath: IndexPath, add: Bool) {
-        if add {
-            
-        } else {
-            
-        }
+        moviesViewModel.changeMovieFave(movie: movies[indexPath.row], isfave: add)
+        print(add)
     }
 }

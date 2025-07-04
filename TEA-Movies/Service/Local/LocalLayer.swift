@@ -47,11 +47,12 @@ class LocalLayer: LocalProtocol {
         do {
             let results = try managedContext.fetch(fetchRequest) as? [NSManagedObject]
             
-            if let task = results?.first {
-                task.setValue(isFave, forKey: "isFave")
+            if let movieFound = results?.first {
+                movieFound.setValue(isFave, forKey: "isFave")
                 
                 try managedContext.save()
-                print("Updated movie to done.")
+                print("Updated movie")
+                print("movie updated \(movieFound)")
             } else {
                 print("No movie found ")
             }
@@ -68,7 +69,7 @@ class LocalLayer: LocalProtocol {
         do {
             let movies = try managedContext.fetch(fetchRequest)
             for i in movies {
-                let m = MoviesResponseResults(adult: false, genreIds: [], id: i.value(forKey: "id") as? Int, originalLanguage: "", originalTitle: i.value(forKey: "name") as? String, overview: "", popularity: 0.0, posterPath: i.value(forKey: "imageURL") as? String, releaseDate: i.value(forKey: "date") as? String, title: i.value(forKey: "name") as? String, video: false, voteAverage: i.value(forKey: "rating") as? Int, voteCount: 0)
+                let m = MoviesResponseResults(adult: false, genreIds: [], id: i.value(forKey: "id") as? Int, originalLanguage: "", originalTitle: i.value(forKey: "name") as? String, overview: "", popularity: 0.0, posterPath: i.value(forKey: "imageURL") as? String, releaseDate: i.value(forKey: "date") as? String, title: i.value(forKey: "name") as? String, video: false, voteAverage: i.value(forKey: "rating") as? Int, voteCount: 0, isFave: i.value(forKey: "isFave") as? Bool)
                 
                 
                 moviesResult.append(m)

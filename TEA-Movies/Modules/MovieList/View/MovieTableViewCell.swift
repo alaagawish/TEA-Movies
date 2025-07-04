@@ -25,13 +25,13 @@ class MovieTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func addNewMovie(_ movie: MoviesResponseResults, isFave: Bool) {
+    func addNewMovie(_ movie: MoviesResponseResults) {
         movieImage.kf.setImage(with: URL(string: movie.posterPath ?? ""), placeholder: UIImage(named: "notfound"))
         ratingView.rating = Double(movie.voteAverage ?? 0) / 2.0
         ratingView.isUserInteractionEnabled = false
         movieName.text = movie.title
         movieDate.text = movie.releaseDate
-        faveButton.setImage(UIImage(systemName: isFave ? Constants.filledStar : Constants.star), for: .normal)
+        faveButton.setImage(UIImage(systemName: movie.isFave ?? false ? Constants.filledStar : Constants.star), for: .normal)
         
     }
     

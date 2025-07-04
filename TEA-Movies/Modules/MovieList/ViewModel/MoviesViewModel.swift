@@ -23,13 +23,15 @@ class MoviesViewModel {
     func getMovies(sortedBy: SortTypes, releaseYear: Int) {
         repository.getMoviesList(sortedBy: sortedBy, releaseYear: releaseYear, token: Constants.TOKEN) { [weak self] result in
             self?.moviesResponse = result
-            self?.clearLocalDB()
-            
         }
     }
     
     func getLocalMovies() {
         moviesResponse = MoviesResponse(page: 0, results: repository.getMovies(), totalPages: 0, totalResults: 0)
+    }
+    
+    func getFavedMovies() -> [MoviesResponseResults] {
+        return repository.getMovies().filter { $0.isFave == true }
     }
     
     func clearLocalDB() {
@@ -45,5 +47,6 @@ class MoviesViewModel {
     }
     func changeMovieFave(movie: MoviesResponseResults, isfave: Bool) {
         repository.changeFaveOfMovie(movie: movie, isFave: isfave)
+//        self.getLocalMovies()
     }
 }
