@@ -18,12 +18,14 @@ class MoviesViewController: UIViewController {
         moviesViewModel = MoviesViewModel(repository: Repository(network: Network(), localDataStore: LocalLayer()))
         registerCell()
         bindValues()
-        // TODO: - CHECK INTERNET CONNECTION
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        moviesViewModel.getMovies(sortedBy: .descending, releaseYear: 2025)
+        if moviesViewModel.checkInternetConnection() {
+            moviesViewModel.getMovies(sortedBy: .descending, releaseYear: 2025)
+        } else {
+            moviesViewModel.getLocalMovies()
+        }
     }
     private func bindValues() {
         moviesViewModel.bindMovies = { [weak self] in
@@ -62,8 +64,5 @@ extension MoviesViewController: DealingWithMovieDelegate {
         } else {
             
         }
-        moviesViewModel.getMovies(sortedBy: .descending, releaseYear: 2025)
     }
-    
-    
 }

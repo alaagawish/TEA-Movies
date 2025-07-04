@@ -23,7 +23,23 @@ class MoviesViewModel {
     func getMovies(sortedBy: SortTypes, releaseYear: Int) {
         repository.getMoviesList(sortedBy: sortedBy, releaseYear: releaseYear, token: Constants.TOKEN) { [weak self] result in
             self?.moviesResponse = result
-            print("movies response \(result)")
+            self?.clearLocalDB()
+          
         }
+    }
+    
+    func getLocalMovies() {
+        
+    }
+    
+    func clearLocalDB() {
+//        self?.saveMovieToLocalDB()
+    }
+    
+    func saveMovieToLocalDB() {
+        
+    }
+    func checkInternetConnection() -> Bool {
+       return repository.isConnectedToInternet()
     }
 }
