@@ -8,8 +8,8 @@
 import Foundation
 
 class MoviesViewModel {
-    let repository: Repository!
-    init(repository: Repository!) {
+    let repository: RepositoryProtocol!
+    init(repository: RepositoryProtocol!) {
         self.repository = repository
     }
     var bindMovies: (()->()) = {}
