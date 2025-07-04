@@ -24,22 +24,26 @@ class MoviesViewModel {
         repository.getMoviesList(sortedBy: sortedBy, releaseYear: releaseYear, token: Constants.TOKEN) { [weak self] result in
             self?.moviesResponse = result
             self?.clearLocalDB()
-          
+            
         }
     }
     
     func getLocalMovies() {
-        
+        moviesResponse = MoviesResponse(page: 0, results: repository.getMovies(), totalPages: 0, totalResults: 0)
     }
     
     func clearLocalDB() {
-//        self?.saveMovieToLocalDB()
+        repository.clearAllMovies()
+        saveMovieToLocalDB()
     }
     
     func saveMovieToLocalDB() {
-        
+        repository.add(movies: moviesResponse?.results ?? [])
     }
     func checkInternetConnection() -> Bool {
-       return repository.isConnectedToInternet()
+        return repository.isConnectedToInternet()
+    }
+    func changeMovieFave(movie: MoviesResponseResults, isfave: Bool) {
+        repository.changeFaveOfMovie(movie: movie, isFave: isfave)
     }
 }

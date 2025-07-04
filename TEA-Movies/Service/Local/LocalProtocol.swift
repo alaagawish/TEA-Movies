@@ -8,5 +8,9 @@
 import Foundation
 
 protocol LocalProtocol {
+    func add(movies: [MoviesResponseResults])
+    func changeFaveOfMovie(movie: MoviesResponseResults, isFave: Bool)
+    func getMovies() -> [MoviesResponseResults]
+    func clearAllMovies()
     
 }

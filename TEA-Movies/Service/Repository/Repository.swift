@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Repository: NetworkProtocol {
+class Repository: NetworkProtocol, LocalProtocol {
+   
     var network: NetworkProtocol!
     var localDataStore: LocalProtocol!
     init(network: NetworkProtocol!, localDataStore: LocalProtocol!) {
@@ -25,4 +26,21 @@ class Repository: NetworkProtocol {
         print("internet check \(Connectivity.shared.isConnected)")
         return Connectivity.shared.isConnected
     }
+    
+    func add(movies: [MoviesResponseResults]) {
+        localDataStore.add(movies: movies)
+    }
+    
+    func changeFaveOfMovie(movie: MoviesResponseResults, isFave: Bool) {
+        localDataStore.changeFaveOfMovie(movie: movie, isFave: isFave)
+    }
+    
+    func getMovies() -> [MoviesResponseResults] {
+        return localDataStore.getMovies()
+    }
+    
+    func clearAllMovies() {
+        localDataStore.clearAllMovies()
+    }
+    
 }
