@@ -19,9 +19,13 @@ class MoviesViewController: UIViewController {
         registerCell()
         bindValues()
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         if moviesViewModel.checkInternetConnection() {
             moviesViewModel.getMovies(sortedBy: .descending, releaseYear: 2025)
         } else {
@@ -75,5 +79,11 @@ extension MoviesViewController: DealingWithMovieDelegate {
     func toggleMovieToFavourite(at indexPath: IndexPath, add: Bool) {
         moviesViewModel.changeMovieFave(movie: movies[indexPath.row], isfave: add)
         print(add)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "MovieDetails", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: MovieDetailsViewController.identifier) as? MovieDetailsViewController else { return }
+        vc.movie = movies[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

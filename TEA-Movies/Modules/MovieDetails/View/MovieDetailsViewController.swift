@@ -6,24 +6,47 @@
 //
 
 import UIKit
+import Cosmos
 
 class MovieDetailsViewController: UIViewController {
-
+    static let identifier = "MovieDetailsViewController"
+    @IBOutlet private weak var movieOriginalLanguage: UILabel!
+    @IBOutlet private weak var movieVote: UILabel!
+    @IBOutlet private weak var movieDetails: UILabel!
+    @IBOutlet private weak var movieRate: CosmosView!
+    @IBOutlet private weak var movieDate: UILabel!
+    @IBOutlet private weak var movieName: UILabel!
+    @IBOutlet private weak var movieImage: UIImageView!
+    @IBOutlet private weak var faveButton: UIButton!
+    
+    var movie: MoviesResponseResults!
+    var moviesViewModel: MoviesViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        moviesViewModel = MoviesViewModel(repository: Repository(network: Network(), localDataStore: LocalLayer()))
+        setValues()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setValues() {
+        faveButton.setImage(UIImage(systemName: movie.isFave ?? false ? Constants.filledStar : Constants.star), for: .normal)
+        movieName.text = movie.originalTitle
+        movieDate.text = movie.releaseDate
+        movieDetails.text = movie.overview
+        movieVote.text = "Average Vote: \(movie.voteAverage ?? 0)"
+        movieRate.isUserInteractionEnabled = false
+        movieRate.rating = Double(movie.voteAverage ?? 0) / 2
+        movieImage.kf.setImage(with: URL(string: movie.posterPath ?? ""), placeholder: UIImage(named: "notfound"))
+        movieOriginalLanguage.text = "Original Language: \(movie.originalLanguage?.uppercased() ?? "not found")"
     }
-    */
-
+    @IBAction func addItemToFave(_ sender: Any) {
+        print("ddd")
+        if faveButton.image(for: .normal) == UIImage(systemName: Constants.star) {
+            moviesViewModel.changeMovieFave(movie: movie, isfave: true)
+            faveButton.setImage(UIImage(systemName: Constants.filledStar), for: .normal)
+        } else {
+            moviesViewModel.changeMovieFave(movie: movie, isfave: false)
+            faveButton.setImage(UIImage(systemName: Constants.star), for: .normal)
+        }
+    }
 }
