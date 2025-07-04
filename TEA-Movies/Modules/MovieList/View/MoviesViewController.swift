@@ -34,10 +34,11 @@ class MoviesViewController: UIViewController {
     }
     
     private func bindValues() {
-        moviesViewModel.bindFaveMovies = { [weak self] in
-            self?.checkFave()
+        moviesViewModel.bindLocalMovies = { [weak self] in
+            self?.movies = self?.moviesViewModel.localMovies ?? []
             self?.moviesTableView.reloadData()
         }
+        
         moviesViewModel.bindMovies = { [weak self] in
             self?.movies = self?.moviesViewModel.moviesResponse?.results ?? []
             self?.checkFave()
@@ -47,11 +48,9 @@ class MoviesViewController: UIViewController {
     
     private func checkFave() {
         let faveMovies = moviesViewModel.getFavedMovies()
-        
         let faveIDs = Set(faveMovies.map { $0.id })
         for i in 0..<movies.count {
             movies[i].isFave = faveIDs.contains(movies[i].id)
-            
         }
     }
     
