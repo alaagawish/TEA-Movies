@@ -29,6 +29,7 @@ class LocalLayer: LocalProtocol {
             movieEntity.setValue(i.posterPath, forKey: "imageURL")
             movieEntity.setValue(i.isFave, forKey: "isFave")
             movieEntity.setValue(i.voteAverage, forKey: "rating")
+            movieEntity.setValue(i.id, forKey: "id")
             
             do {
                 try managedContext.save()

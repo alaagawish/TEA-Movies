@@ -36,11 +36,10 @@ class MovieDetailsViewController: UIViewController {
         movieVote.text = "Average Vote: \(movie.voteAverage ?? 0)"
         movieRate.isUserInteractionEnabled = false
         movieRate.rating = Double(movie.voteAverage ?? 0) / 2
-        movieImage.kf.setImage(with: URL(string: movie.posterPath ?? ""), placeholder: UIImage(named: "notfound"))
+        movieImage.kf.setImage(with: URL(string: "\(Constants.IMAGE_BASE_URL)\(movie.posterPath ?? "")"), placeholder: UIImage(named: "notfound"))
         movieOriginalLanguage.text = "Original Language: \(movie.originalLanguage?.uppercased() ?? "not found")"
     }
     @IBAction func addItemToFave(_ sender: Any) {
-        print("ddd")
         if faveButton.image(for: .normal) == UIImage(systemName: Constants.star) {
             moviesViewModel.changeMovieFave(movie: movie, isfave: true)
             faveButton.setImage(UIImage(systemName: Constants.filledStar), for: .normal)

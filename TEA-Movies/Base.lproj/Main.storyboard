@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-cu-Igk">
-                                <rect key="frame" x="16" y="162" width="80" height="27.666666666666657"/>
+                                <rect key="frame" x="16" y="162" width="365" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W4T-c1-CxY">
-                                <rect key="frame" x="12" y="189.66666666666669" width="369" height="594.33333333333326"/>
+                                <rect key="frame" x="12" y="190.66666666666669" width="369" height="593.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="7EP-RD-t8h"/>
@@ -41,6 +41,7 @@
                             <constraint firstItem="QgY-cu-Igk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xfy-Q0-Thr"/>
                             <constraint firstItem="W4T-c1-CxY" firstAttribute="top" secondItem="QgY-cu-Igk" secondAttribute="bottom" id="d36-au-qxZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W4T-c1-CxY" secondAttribute="trailing" constant="12" id="fyl-NM-BjN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgY-cu-Igk" secondAttribute="trailing" constant="12" id="sf8-qD-xvJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VMc-Lj-bMN"/>

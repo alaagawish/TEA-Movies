@@ -8,6 +8,7 @@
 import Foundation
 struct Constants {
     static let OK = "OK"
+    static let IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
     static let Yes = "Yes"
     static let star = "star"
     static let filledStar = "star.fill"

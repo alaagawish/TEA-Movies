@@ -13,7 +13,12 @@ class MoviesViewModel {
         self.repository = repository
     }
     var bindMovies: (()->()) = {}
-    
+    var bindFaveMovies: (()->()) = {}
+    var favMovies: [MoviesResponseResults]? {
+        didSet {
+            bindFaveMovies()
+        }
+    }
     var moviesResponse: MoviesResponse? {
         didSet {
             bindMovies()
@@ -27,10 +32,11 @@ class MoviesViewModel {
     }
     
     func getLocalMovies() {
-        moviesResponse = MoviesResponse(page: 0, results: repository.getMovies(), totalPages: 0, totalResults: 0)
+        favMovies = repository.getMovies()
     }
     
     func getFavedMovies() -> [MoviesResponseResults] {
+        print(repository.getMovies())
         return repository.getMovies().filter { $0.isFave == true }
     }
     
@@ -47,6 +53,6 @@ class MoviesViewModel {
     }
     func changeMovieFave(movie: MoviesResponseResults, isfave: Bool) {
         repository.changeFaveOfMovie(movie: movie, isFave: isfave)
-//        self.getLocalMovies()
+        self.getLocalMovies()
     }
 }

@@ -52,8 +52,8 @@
                                     <action selector="addToFavourite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aUB-aJ-qnY"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U40-8G-VUL" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="154" y="46" width="284" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U40-8G-VUL" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="154" y="46" width="303" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4FN-iG-kIo"/>
@@ -85,6 +85,7 @@
                             <constraint firstItem="U40-8G-VUL" firstAttribute="top" secondItem="EdJ-bZ-8HU" secondAttribute="bottom" id="2iZ-yb-gcu"/>
                             <constraint firstItem="U40-8G-VUL" firstAttribute="leading" secondItem="rzK-YF-FrN" secondAttribute="trailing" constant="12" id="6S3-pR-ASF"/>
                             <constraint firstAttribute="trailing" secondItem="HTl-F3-4X5" secondAttribute="trailing" constant="12" id="CTB-xf-4XX"/>
+                            <constraint firstAttribute="trailing" secondItem="U40-8G-VUL" secondAttribute="trailing" constant="16" id="Jkp-u2-E2x"/>
                             <constraint firstItem="HTl-F3-4X5" firstAttribute="top" secondItem="r02-HA-W7h" secondAttribute="top" constant="12" id="Nwy-4c-gSK"/>
                             <constraint firstItem="rzK-YF-FrN" firstAttribute="top" secondItem="r02-HA-W7h" secondAttribute="top" id="U0Z-Ge-2Vk"/>
                             <constraint firstAttribute="bottom" secondItem="rzK-YF-FrN" secondAttribute="bottom" id="X8E-st-Fhs"/>
