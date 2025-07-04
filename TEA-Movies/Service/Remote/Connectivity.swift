@@ -8,12 +8,16 @@
 import Foundation
 import Network
 
-class Connectivity {
-    static let shared = Connectivity()
+protocol ConnectivityProtocol {
+    var isConnected: Bool { get set }
+    func startMonitoring()
+    func waitUntilChecked(completion: @escaping (Bool) -> Void)
+}
+class Connectivity: ConnectivityProtocol {
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue.global(qos: .background)
     
-    public private(set) var isConnected: Bool = false
+    var isConnected: Bool = false
     
     private let group = DispatchGroup()
     
